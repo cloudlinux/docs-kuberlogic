@@ -12,7 +12,7 @@ const slugifyLinks = (s) => {
 // set your global autometa options
 const autoMetaOptions = {
   site: {
-    name   : 'TuxCare Documentation',
+    name   : 'KuberLogic Documentation',
     // twitter: 'tuxcare_docs',
   },
   canonical_base: '/',
@@ -88,7 +88,7 @@ module.exports = {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
       title: "Documentation",
-      description: "TuxCare"
+      description: "KuberLogic"
     }
   },
   theme: "cloudlinux",
@@ -100,54 +100,54 @@ module.exports = {
   },
 
   themeConfig: {
-    repo: "cloudlinux/tuxcare-doc",
+    repo: "cloudlinux/docs-kuberlogic",
     editLinks: true,
     docsBranch: "dev",
     docsDir: "docs",
     search: "Search",
     algolia: {
-      apiKey: "17e673c12b93fbf7c4a00159b0ae2de0",
-      indexName: "tuxcare",
-      appId: "R7FCMJM4P7"
+      apiKey: "3747452cd7ffb1f93e21b7c6f5b0bf51",
+      indexName: "kuberlogic",
+      appId: "0TCNL6CGX8"
   },
 
-    translationSource: "docs-dev.cln.cloudlinux.com",
-    defaultURL: "/tuxcare/",
-    submitRequestURL: "https://tuxcare.zendesk.com/hc/en-us",
+  //  translationSource: "",
+    defaultURL: "/getting-started/",
+    submitRequestURL: "https://kuberlogic.clearflask.com/",
     hideHeading: true,
     redirectionMapping: urls,
     sidebarDepth: 2,
     logo: "/logo.svg",
-    try_free: "https://portal.tuxcare.com",
+    try_free: "mailto:info@kuberlogic.com",
 
-    social: [
-      { url: "https://www.facebook.com/TuxCare", logo: "/fb.png" },
-      { url: "https://twitter.com/tux_care", logo: "/tw.png" },
-      { url: "https://www.linkedin.com/showcase/tuxcare", logo: "/in.png" },
-      {
-        url: "https://www.youtube.com/channel/UCr4GTupdSlC33wfwAGk3jsA/%20Fa",
-        logo: "/ytube.png"
-      }
-    ],
+  //  social: [
+  //    { url: "https://www.facebook.com/TuxCare", logo: "/fb.png" },
+  //    { url: "https://twitter.com/tux_care", logo: "/tw.png" },
+  //    { url: "https://www.linkedin.com/showcase/tuxcare", logo: "/in.png" },
+  //    {
+  //      url: "https://www.youtube.com/channel/UCr4GTupdSlC33wfwAGk3jsA/%20Fa",
+  //      logo: "/ytube.png"
+  //    }
+  //  ],
     cloudlinuxSite: "https://cloudlinux.com",
     locales: {
       "/": {
-        stayInTouch: "Stay in touch",
+  //      stayInTouch: "Stay in touch",
         bottomLinks: [
-          {
-            text: "FAQ",
-            url:
-              "https://tuxcare.com/faq/"
-          },
+  //        {
+  //          text: "FAQ",
+  //          url:
+  //            "https://tuxcare.com/faq/"
+  //        },
 //          {
 //            text: "Getting started",
 //            url: "https://www.cloudlinux.com/getting-started-with-cloudlinux-os"
 //          },
           {
-            text: "Contact support",
-            url: "https://tuxcare.zendesk.com/hc/en-us"
+            text: "Feedback",
+            url: "https://kuberlogic.clearflask.com/"
           },
-          { text: "Blog", url: "https://blog.tuxcare.com/" }
+          { text: "Slack community", url: "https://join.slack.com/t/kuberlogic/shared_invite/zt-x845lggh-lne0taYmwLFgQ6XZEiTJoA" }
         ],
 
         // text for the language dropdown title
@@ -158,9 +158,9 @@ module.exports = {
         label: "English",
         // text for the edit-on-github link
         editLinkText: "Edit this page",
-        tryFree: "Login to CLN",
-        submitRequest: "Contact Support",
-        customHomeUrl: "https://www.tuxcare.com",
+        tryFree: "Email us",
+        submitRequest: "Feedback",
+        customHomeUrl: "https://kuberlogic.clearflask.com/",
         search: "Search",
         // config for Service Worker
         serviceWorker: {
@@ -180,12 +180,13 @@ module.exports = {
             title: "Content",
             collapsable: false,
             children: [
-              "/tuxcare/",
-              "/live-patching-services/",
-              "/eportal/",
-              "/extended-lifecycle-support/",
-              "/linux-support-services/",
-              "/tuxcare-cln/"
+              "/getting-started/",
+              "/architecture/",
+              "/setting-ingress-controller/",
+              "/configuring/",
+              "/clean-up/",
+              "/cli/",
+              "/using/"
             ]
           }
         ]
